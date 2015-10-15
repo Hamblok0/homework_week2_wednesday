@@ -1,0 +1,141 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+* {
+  box-sizing: border-box;
+}
+
+ header {
+   @include outer-container;
+   height: 100%;
+   margin-bottom: 50px;
+ }
+
+nav {
+  height: 20px;
+  margin: 0;
+
+
+}
+
+nav a, .logo {
+  @include span-columns(2);
+  text-align: center;
+  margin: 0 10px 0 0;
+
+}
+
+ nav .logo {
+   width: 25%;
+   color: #565D64;
+   margin-left: 10px;
+ }
+
+ nav a {
+   color: #7C7C7C;
+   text-decoration: none;
+ }
+ nav a:nth-child(odd) {
+   color: #000000;
+ }
+
+.tree {
+  background-image: url("../images/background.jpg");
+  @include span-columns(12);
+  margin: 10px 0 0 0;
+  height: 200px;
+  padding-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  width: 80%;
+  margin: 0 0 0 40px;
+}
+
+
+
+
+
+.personal, .smallB, .enterprise {
+    @include span-columns(11);
+    @include shift(.5);
+    text-align: center;
+
+    div {
+      background-color: #F7F7F7;
+      height: 45px;
+      text-align: center;
+      border: 1px solid #E7E7E7;
+      border-top: none;
+      padding-top: 14px;
+      font-weight: bold;
+    }
+    .choose {
+      height: 85px;
+      text-align: center;
+      border: 1px solid #E7E7E7;
+      border-top: none;
+      padding-top: 25px;
+      margin-bottom: 35px;
+     }
+}
+ .button {
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #D3D3D3;
+	display:inline-block;
+	color:#000000;
+	font-size:1em;
+	padding:9px 15px;
+	text-decoration:none;
+  font-weight: bold;
+ }
+
+
+.price {
+  height: 230px;
+  background-color: #4E8D4E;
+  padding-top: 15px;
+}
+
+h2 {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 1.15em;
+  margin-bottom: 0;
+  font-family: 'helvetica', sans-serif;
+  font-weight: lighter;
+}
+
+h2:nth-child(2) {
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.10em;
+  font-weight: lighter;
+}
+
+h2:nth-child(3) {
+  color: #A3C5A3;
+  margin-top: 0;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+.info {
+  @include span-columns(7);
+  @include shift(1);
+  margin-top: 50px;
+}
+
+footer {
+  height: 100px;
+  @include span-columns(12);
+  background-color: black;
+  color: #888888;
+  text-align: center;
+  padding: 20px 30px;
+}
